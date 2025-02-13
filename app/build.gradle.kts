@@ -10,7 +10,7 @@ android {
     defaultConfig {
         applicationId = "com.bignerdranch.express"
         minSdk = 24
-        // no inspection OldTargetApi
+        //noinspection OldTargetApi
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
