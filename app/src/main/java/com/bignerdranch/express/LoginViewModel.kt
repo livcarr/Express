@@ -1,4 +1,7 @@
 package com.bignerdranch.express
 
-class LoginViewModel {
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+
+class LoginViewModel() : ViewModel() {
 }

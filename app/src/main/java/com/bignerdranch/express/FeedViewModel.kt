@@ -1,4 +1,7 @@
 package com.bignerdranch.express
 
-class FeedViewModel {
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
+
+class FeedViewModel() : ViewModel() {
 }
