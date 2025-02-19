@@ -22,13 +22,8 @@ tools:context=".MainActivity">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:text="Hello World! This is the Main Activity."/>
 
-    <Button
-        android:id="@+id/login_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/login_button"/>
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragment_container"
