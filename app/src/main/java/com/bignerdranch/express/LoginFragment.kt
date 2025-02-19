@@ -38,8 +38,8 @@ class LoginFragment: Fragment() {
 
         val loginButton = view.findViewById<Button>(R.id.login_button);
         loginButton.setOnClickListener {
-            val intent = Intent(getActivity(), NavActivity::class.java)
-            startActivity(intent)
+            val intent = Intent(activity, NavActivity::class.java)
+            activity?.startActivity(intent)
         }
     }
 
