@@ -1,4 +1,4 @@
-package com.bignerdranch.express.sidebarUi.mainline
+package com.bignerdranch.express.sidebarUi.profile
 
 import android.os.Bundle
 import android.view.LayoutInflater
