@@ -3,6 +3,7 @@ package com.bignerdranch.express
 import android.os.Bundle
 import android.util.Log
 import android.view.Menu
+import android.widget.TextView
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -48,6 +49,18 @@ class NavActivity : AppCompatActivity() {
 
         val username = intent.extras?.getString("username")
         Log.d(TAG, "username passed in onViewCreated as $username")
+
+        // Find NavigationView
+        Log.d(TAG, "finding nav view")
+        val navigationView = findViewById<NavigationView>(R.id.nav_view)
+        // Find TextView inside the header
+        val navHeaderView = navigationView.getHeaderView(0)
+        Log.d(TAG, "finding nav header title textview")
+        val welcomeUserTextView = navHeaderView.findViewById<TextView>(R.id.nav_header_title_textView)
+        // Set text to the TextView
+        Log.d(TAG, "displaying welcome message in sidebar")
+        welcomeUserTextView?.text = "Welcome, $username."
+
     }
 
     override fun onSupportNavigateUp(): Boolean {

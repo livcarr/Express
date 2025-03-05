@@ -3,12 +3,13 @@
     <string name="title_activity_nav">NavActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Express</string>
-    <string name="nav_header_subtitle">By Liv and Kay</string>
+    <string name="nav_header_title">Welcome to Express</string>
+    <string name="nav_header_subtitle">It\'s good to see you :)</string>
     <string name="nav_header_desc">Navigation header</string>
 
     <string name="menu_mainline">Mainline</string>
     <string name="menu_profile">Profile</string>
 
     <string name="login_button">Log In</string>
+
 </resources>
