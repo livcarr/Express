@@ -55,4 +55,25 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // Imports FireBase Bill of Materials (BoM)
+    implementation(platform("com.google.firebase:firebase-bom:33.9.0"))
+
+    // TODO: Add dependencies for Firebase products I want to use
+    // Don't specify versions bc BoM
+    implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-appcheck-playintegrity")
+    implementation("com.google.firebase:firebase-auth")
+    implementation("com.google.firebase:firebase-firestore")
+    implementation("com.google.firebase:firebase-functions")
+    implementation("com.google.firebase:firebase-messaging")
+    implementation("com.google.firebase:firebase-crashlytics")
+    implementation("com.google.firebase:firebase-crashlytics-gradle")
+    implementation("com.google.firebase:firebase-dynamic-module-support")
+    implementation("com.google.firebase:firebase-dynamic-links")
+    implementation("com.google.firebase:firebase-inappmessaging")
+    implementation("com.google.firebase:firebase-inappmessaging-display")
+    implementation("com.google.firebase:firebase-installations")
+    implementation("com.google.firebase:firebase-perf")
+    implementation("com.google.firebase:perf-plugin")
 }
