@@ -9,6 +9,13 @@
         android:layout_height="wrap_content"
         android:text="This is the Login Page." />
 
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Username" />
+
     <Button
         android:id="@+id/login_button"
         android:layout_width="wrap_content"

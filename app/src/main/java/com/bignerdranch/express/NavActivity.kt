@@ -1,6 +1,7 @@
 package com.bignerdranch.express
 
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
@@ -14,6 +15,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.bignerdranch.express.databinding.ActivityNavBinding
 
 class NavActivity : AppCompatActivity() {
+    private val TAG = "NavActivity"
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityNavBinding
@@ -43,6 +45,9 @@ class NavActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        val username = intent.extras?.getString("username")
+        Log.d(TAG, "username passed in onViewCreated as $username")
     }
 
     override fun onSupportNavigateUp(): Boolean {

@@ -2,6 +2,7 @@ package com.bignerdranch.express
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,6 +12,8 @@ import androidx.fragment.app.viewModels
 import com.bignerdranch.express.databinding.FragmentLoginBinding
 
 class LoginFragment: Fragment() {
+
+    private val TAG = "LoginFragment"
 
     private var _binding: FragmentLoginBinding? = null
     private val binding
@@ -38,7 +41,10 @@ class LoginFragment: Fragment() {
 
         val loginButton = view.findViewById<Button>(R.id.login_button);
         loginButton.setOnClickListener {
+            val username = binding.usernameEditText.text.toString()
             val intent = Intent(activity, NavActivity::class.java)
+            intent.putExtra("username", username)
+            Log.d(TAG, "username passed in onViewCreated as $username")
             activity?.startActivity(intent)
         }
     }

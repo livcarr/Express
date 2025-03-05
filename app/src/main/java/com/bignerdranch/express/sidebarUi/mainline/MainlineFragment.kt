@@ -1,15 +1,20 @@
 package com.bignerdranch.express.sidebarUi.mainline
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import com.bignerdranch.express.databinding.FragmentLoginBinding
 import com.bignerdranch.express.databinding.FragmentMainlineBinding
 
 class MainlineFragment: Fragment() {
+
+    private val TAG = "MainlineFragment"
+
     private var _binding: FragmentMainlineBinding? = null
     private val binding
         get() = checkNotNull(_binding) {
